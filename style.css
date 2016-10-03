@@ -1,0 +1,24 @@
+header{
+	text-align:center;
+}
+
+body{
+	background-color:green;
+}
+
+.navBar{
+	display: -webkit-flex;
+	display: flex;
+	width: 150px;
+	height: 250px;
+	background-color: lightgrey;
+	border: 2px black solid;
+}
+
+.navBar >.linkItem{
+	width: 150px;
+	height: 30px;
+	background-color: blue;
+	border: 2px black solid;
+	margin: 5px;
+}
