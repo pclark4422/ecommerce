@@ -10,12 +10,19 @@ body{
 	display: -webkit-flex;
 	display: flex;
 	width: 150px;
-	height: 250px;
+	height: 100%;
 	background-color: lightgrey;
 	border: 2px black solid;
 }
 
-.navBar >.linkItem{
+.navBar > ul{
+	list-style = "none";
+	position: relative;
+}
+.linkItem{
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
 	width: 150px;
 	height: 30px;
 	background-color: blue;
