@@ -2,7 +2,7 @@ body{
 	height: 98vh;
 	width: 97.2vw;
 	padding: .5vw;
-	font: bold 2em Georgia serif;
+	font: bold 2rem Georgia serif;
 	border: medium black solid;
 }
 
@@ -18,14 +18,18 @@ header{
 	height:inherit;
 	width:inherit;
 	opacity: .25;
-	position: relative;
+	z-index: -1;
+	position: absolute;
 }
 
-header > h1{
-	position: absolute;
+header > p{
+	/*position: absolute;
 	width: inherit -22%;
 	top: -1%;
 	left: 22%;
+	font-size: 4rem;*/
+	text-align: center;
+	padding: 0;
 
 }
 
@@ -58,14 +62,16 @@ li.navList > a{
 }
 
 #main{
-	width: 96.5vw;
+	width: inherit;
 	height: 70.5vh;
-	margin: .5vh .5vw .5vh 0vh;
+	margin: .5vh 0 .5vh 0;
+	padding: 0 .5vw;
 	border: medium black solid;
 }
 
 footer{
 	text-align: center;
 	height: 14vh;
+	width: inherit;
 	border: medium black solid;
 }
