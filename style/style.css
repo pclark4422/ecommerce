@@ -1,25 +1,42 @@
-header{
-	text-align:center;
-	width: 99%;
-	margin: auto;
-	height: 10%;
-	/*position: fixed;*/
-}
-
 body{
-	background-color:green;
-	height: 100%;
+	height: 98vh;
+	width: 97.2vw;
+	padding: .5vw;
+	font: bold 2em Georgia serif;
+	border: medium black solid;
 }
 
-ul.navBar{
+header{
+	width: 96.5vw;
+	height: 5vh;
+	/*background-image: url("../img/pawPrints.png");*/
+	border: medium black solid;
+	margin: 0 .5vw .5vh 0;
+}
+
+#pawPrints{
+	height:inherit;
+	width:inherit;
+	opacity: .25;
+	position: relative;
+}
+
+header > h1{
+	position: absolute;
+	width: inherit -22%;
+	top: -1%;
+	left: 22%;
+
+}
+
+.navBar > ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: lightgrey;
 	text-align: center;
 	align-content: center;
-	/* position:fixed;*/
+	width: 97.5vw;
 }
 
 li.navlist{
@@ -28,12 +45,12 @@ li.navlist{
 }
 
 li.navList > a{
-	height: 30%;
-	width:25%;
-	font: bold 2em Georgia serif;
+	height: 2vh;
+	width: 24vw;
+
 	background-color: aqua;
 	border: medium black solid;
-	margin: .28% .6% .25% 1%;
+	margin: .28% 1% .25% 1%;
 	padding: 3%;
 	text-align: center;
 	display: inline-block;
@@ -41,9 +58,14 @@ li.navList > a{
 }
 
 #main{
-	background-color: purple;
-	width: 100%;
-	height: 100%;
-	margin: .5% 0 .5% 0;
-	display: block;
+	width: 96.5vw;
+	height: 70.5vh;
+	margin: .5vh .5vw .5vh 0vh;
+	border: medium black solid;
+}
+
+footer{
+	text-align: center;
+	height: 14vh;
+	border: medium black solid;
 }
