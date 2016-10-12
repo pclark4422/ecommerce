@@ -23,15 +23,7 @@ header::after {
 	left: 0;
 }
 
-#pawPrints {
-	height:inherit;
-	width:inherit;
-	opacity: .25;
-	z-index: -1;
-	position: absolute;
-}
-
-header > p {
+header > h2 {
 	text-align: center;
 	padding: 0;
 
@@ -55,7 +47,7 @@ li.navlist {
 li.navList > a {
 	height: 2vh;
 	width: 24vw;
-
+	font-size: 2rem;
 	background-color: aqua;
 	border: medium black solid;
 	margin: .28% 1% .25% 1%;
@@ -67,10 +59,43 @@ li.navList > a {
 
 #main {
 	width: inherit;
-	min-height: 70.5vh;
+	min-height: 59vh;
 	margin: .5vh 0 .5vh 0;
 	padding: 0 .5vw;
 	border: medium black solid;
+	overflow: scroll;
+	font: bold 1rem Georgia serif;
+}
+
+#main > img{
+	width: 100%;
+	height: auto;
+	margin-top: 3vh;
+}
+
+#cart{
+	min-height: 77.3vh;
+}
+
+#display{
+	/*min-height: 83.5vh;*/
+	overflow-y: scroll;
+	text-align: center;
+	height: 80.5vh;
+	max-height: 80.5vh;
+	padding: 1vh;
+}
+
+#display > label > img{
+	height: 278px;
+	float: bottom
+	border: thin black solid;
+}
+
+#display > label{
+	float: top;
+	display: block;
+	font-size: 3rem;
 }
 
 footer {
@@ -78,4 +103,70 @@ footer {
 	height: auto;
 	width: inherit;
 	border: medium black solid;
+}
+
+form{
+	padding: .5%;
+	margin:.5%;
+	width: inherit;
+	min-height: inherit;
+	text-align: center;
+	border: thin black solid;
+	position: relative;
+}
+
+table{
+	padding: .25%;
+	min-width: 98.5%;
+}
+
+tr{
+	min-width: 100%;
+	padding: .25%;
+}
+
+td{
+	min-width: inherit;
+	height: 3rem;
+}
+
+input{
+	font: inherit;
+	width: 100%;
+	margin: .5%;
+	display: block;
+	padding: .5%;
+	border: thin black solid;
+}
+
+th{
+	font-weight: bolder;
+	border: medium black solid;
+}
+
+#invBody > tr > td{
+	border: thin black solid;
+}
+
+#invBody tr:nth-child(even){
+	background: lightgreen;
+}
+
+#invoice > table{
+	border: thin black solid;
+}
+
+.money{
+	text-align: left;
+}
+
+.money::before{
+	content: '$'
+}
+
+#submit{
+	height: 5vh;
+	bottom: 0;
+	width: 95.5vw;
+
 }
