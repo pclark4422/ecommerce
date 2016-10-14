@@ -1,6 +1,9 @@
+/*Style designed for mobile devices.  Desktop styling to come later*/
 body {
 	padding: .5vw;
-	font: bold 2rem Georgia serif;
+	font-weight: bold;
+	font-size: 2rem;
+	font-family: Georgia serif;
 	border: medium black solid;
 }
 
@@ -47,7 +50,7 @@ li.navlist {
 li.navList > a {
 	height: 2vh;
 	width: 24vw;
-	font-size: 2rem;
+
 	background-color: aqua;
 	border: medium black solid;
 	margin: .28% 1% .25% 1%;
@@ -59,12 +62,12 @@ li.navList > a {
 
 #main {
 	width: inherit;
-	min-height: 59vh;
+	min-height: 74.5vh;
 	margin: .5vh 0 .5vh 0;
 	padding: 0 .5vw;
 	border: medium black solid;
-	overflow: scroll;
-	font: bold 1rem Georgia serif;
+	font-size: 1rem;
+
 }
 
 #main > img{
@@ -75,6 +78,7 @@ li.navList > a {
 
 #cart{
 	min-height: 77.3vh;
+	font-size: 3rem;
 }
 
 #display{
@@ -86,14 +90,12 @@ li.navList > a {
 	padding: 1vh;
 }
 
-#display > label > img{
+#display > dic > img{
 	height: 278px;
-	float: bottom
 	border: thin black solid;
 }
 
-#display > label{
-	float: top;
+#display > div{
 	display: block;
 	font-size: 3rem;
 }
@@ -103,6 +105,7 @@ footer {
 	height: auto;
 	width: inherit;
 	border: medium black solid;
+	font-size: .5rem;
 }
 
 form{
