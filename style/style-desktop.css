@@ -1,37 +1,48 @@
-/*Style designed for mobile devices.  Desktop styling to come later*/
-body {
-	padding: .5vw;
-	font-weight: bold;
-	font-size: 2rem;
-	font-family: Georgia serif;
-	border: medium black solid;
+body{
+  	font-family: Georgia serif;
 }
 
-header {
-	width: 96.5vw;
-	height: auto;
-	border: medium black solid;
-	margin: 0 .5vw .5vh 0;
-	position: relative;
+/* An animated header with the company name*/
+@keyframes pawprints{
+  0%{width:100%;}
+  100%{width:0%;}
 }
 
-header::after {
+header{
+  text-align: center;
+  height: 7%;
+}
+
+.mask{
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  top: 0;
+  right: -0;
+  background-color: white;
+
+  animation-name: pawprints;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+
+header::before {
 	content: "";
 	background: url("../img/pawPrints.png");
 	opacity: .25;
 	position: absolute;
-	height: 100%;
-	width: 100%;
+	height: 7%;
+	width: 98%;
 	top: 0;
-	left: 0;
+	left: 1%;
 }
 
-header > h2 {
-	text-align: center;
-	padding: 0;
-
+header > h1{
 }
 
+
+/* Positions the navigation bar across the top of the page*/
 .navBar > ul {
 	list-style-type: none;
 	margin: 0;
@@ -39,7 +50,7 @@ header > h2 {
 	overflow: hidden;
 	text-align: center;
 	align-content: center;
-	width: 97.5vw;
+  background-color: grey;
 }
 
 li.navlist {
@@ -48,66 +59,31 @@ li.navlist {
 }
 
 li.navList > a {
-	height: 2vh;
-	width: 24vw;
-
 	background-color: aqua;
-	border: medium black solid;
-	margin: .28% 1% .25% 1%;
 	padding: 3%;
 	text-align: center;
 	display: inline-block;
 	float: left;
 }
-
-#main {
-	width: inherit;
-	min-height: 74.5vh;
-	margin: .5vh 0 .5vh 0;
-	padding: 0 .5vw;
-	border: medium black solid;
-	font-size: 1rem;
-
+li.navlist > a::after {
+  float: clear;
 }
 
-#main > img{
-	width: 100%;
-	height: auto;
-	margin-top: 3vh;
+/* Styles the main section of the index page*/
+#main{
+  text-align: center;
 }
 
-#cart{
-	min-height: 77.3vh;
-	font-size: 3rem;
+/* Styles the footer on the index, specificaly making it bottom center*/
+footer{
+  text-align: center;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-#display{
-	/*min-height: 83.5vh;*/
-	overflow-y: scroll;
-	text-align: center;
-	height: 80.5vh;
-	max-height: 80.5vh;
-	padding: 1vh;
-}
-
-#display > dic > img{
-	height: 278px;
-	border: thin black solid;
-}
-
-#display > div{
-	display: block;
-	font-size: 3rem;
-}
-
-footer {
-	text-align: center;
-	height: auto;
-	width: inherit;
-	border: medium black solid;
-	font-size: .5rem;
-}
-
+/* Styles the Shopping Cart page */
 form{
 	padding: .5%;
 	margin:.5%;
