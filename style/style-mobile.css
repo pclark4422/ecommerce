@@ -1,0 +1,203 @@
+/*Style designed for mobile devices. */
+@media(max-width: 750px){
+	body {
+		padding: .5vw;
+		font-weight: bold;
+		font-size: 2rem;
+		font-family: Georgia serif;
+		border: medium black solid;
+	}
+
+	header {
+		width: 96.5vw;
+		height: auto;
+		border: medium black solid;
+		margin: 0 .5vw .5vh 0;
+		position: relative;
+	}
+
+	header::after {
+		content: "";
+		background: url("../img/pawPrints.png");
+		opacity: .25;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	header > h2 {
+		text-align: center;
+		padding: 0;
+
+	}
+
+	.navBar > ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		text-align: center;
+		align-content: center;
+		width: 97.5vw;
+	}
+
+	li.navlist {
+		text-align: center;
+		float: left;
+	}
+
+	.navList > a {
+		height: 2vh;
+		width: 24vw;
+
+		background-color: aqua;
+		border: medium black solid;
+		margin: .28% 1% .25% 1%;
+		padding: 3%;
+		text-align: center;
+		display: inline-block;
+		float: left;
+	}
+
+	#main {
+		width: inherit;
+		min-height: 74.5vh;
+		margin: .5vh 0 .5vh 0;
+		padding: 0 .5vw;
+		border: medium black solid;
+		font-size: 1rem;
+
+	}
+
+	#main > img{
+		width: 100%;
+		height: auto;
+		margin-top: 3vh;
+	}
+
+	#cart{
+		min-height: 77.3vh;
+		font-size: 3rem;
+	}
+
+	#display{
+		/*min-height: 83.5vh;*/
+		overflow-y: scroll;
+		text-align: center;
+		height: 80.5vh;
+		max-height: 80.5vh;
+		padding: 1vh;
+	}
+
+	#display > dic > img{
+		height: 278px;
+		border: thin black solid;
+	}
+
+	/* Carousel item image properties */
+	.item > img{
+		margin: 0 auto;
+		height: 278px;
+		max-height: 278px;
+	}
+
+	#display > div{
+		display: block;
+		font-size: 3rem;
+	}
+
+	footer {
+		text-align: center;
+		height: auto;
+		width: inherit;
+		border: medium black solid;
+		font-size: .5rem;
+	}
+
+	form{
+		padding: .5%;
+		margin:.5%;
+		width: inherit;
+		min-height: inherit;
+		text-align: center;
+		border: thin black solid;
+		position: relative;
+	}
+
+	table{
+		padding: .25%;
+		min-width: 98.5%;
+	}
+
+	tr{
+		min-width: 100%;
+		padding: .25%;
+	}
+
+	td{
+		min-width: inherit;
+		height: 3rem;
+	}
+
+	input{
+		font: inherit;
+		width: 100%;
+		margin: .5%;
+		display: block;
+		padding: .5%;
+		border: thin black solid;
+	}
+
+	th{
+		font-weight: bolder;
+		border: medium black solid;
+	}
+
+	#invBody > tr > td{
+		border: thin black solid;
+	}
+
+	#invBody tr:nth-child(even){
+		background: lightgreen;
+	}
+
+	#invoice > table{
+		border: thin black solid;
+	}
+
+	.money{
+		text-align: left;
+	}
+
+	.money::before{
+		content: '$'
+	}
+
+	#submit{
+		height: 5vh;
+		bottom: 0;
+		width: 95.5vw;
+	}
+	
+	/* Carousel item image properties */
+  .item > a > img{
+    margin: 0 auto;
+    height: 278px;
+    max-height: 278px;
+  }
+
+  #display > div{
+    display: block;
+    font-size: 3rem;
+  }
+	/*Product Category page*/
+	#productList > tr > td{
+		border: thin black solid;
+	}
+
+	#productHeader{
+		text-align: center;
+	}
+}
