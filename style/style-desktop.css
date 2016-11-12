@@ -1,150 +1,209 @@
-body{
-  	font-family: Georgia serif;
-}
+@media(min-width: 750px){
+  body{
+    	font-family: Georgia serif;
+  }
 
-/* An animated header with the company name*/
-@keyframes pawprints{
-  0%{width:100%;}
-  100%{width:0%;}
-}
+  /* An animated header with the company name*/
+  @keyframes pawprints{
+    0%{width:100%;}
+    100%{width:0%;}
+  }
 
-header{
-  text-align: center;
-  height: 7%;
-}
+  header{
+    text-align: center;
+    height: 7%;
+  }
 
-.mask{
-  width: 100%;
-  height: 7%;
-  position: absolute;
-  top: 0;
-  right: -0;
-  background-color: white;
+  .mask{
+    width: 0%;
+    height: 6.8%;
+    position: absolute;
+    top: 0;
+    right: -0;
+    background-color: white;
 
-  animation-name: pawprints;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-}
-
-
-header::before {
-	content: "";
-	background: url("../img/pawPrints.png");
-	opacity: .25;
-	position: absolute;
-	height: 7%;
-	width: 98%;
-	top: 0;
-	left: 1%;
-}
-
-header > h1{
-}
+    animation-name: pawprints;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+  }
 
 
-/* Positions the navigation bar across the top of the page*/
-.navBar > ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	text-align: center;
-	align-content: center;
-  background-color: grey;
-}
+  header::before{
+  	content: "";
+  	background: url("../img/pawPrints.png");
+  	opacity: .25;
+  	position: absolute;
+  	height: 6.8%;
+  	width: 98%;
+  	top: 0;
+  	left: 1%;
+  }
 
-li.navlist {
-	text-align: center;
-	float: left;
-}
 
-li.navList > a {
-	background-color: aqua;
-	padding: 3%;
-	text-align: center;
-	display: inline-block;
-	float: left;
-}
-li.navlist > a::after {
-  float: clear;
-}
+  /* Positions the navigation bar across the top of the page*/
+  .navBar > ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	text-align: center;
+  	align-content: center;
+    background-color: grey;
+  }
 
-/* Styles the main section of the index page*/
-#main{
-  text-align: center;
-}
+  li.navlist {
+  	text-align: center;
+  	float: left;
+  }
 
-/* Styles the footer on the index, specificaly making it bottom center*/
-footer{
-  text-align: center;
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+  li.navList > a {
+  	background-color: aqua;
+  	padding: 3%;
+  	text-align: center;
+  	display: inline-block;
+  	float: left;
+  }
+  li.navlist > a::after {
+    float: clear;
+  }
 
-/* Styles the Shopping Cart page */
-form{
-	padding: .5%;
-	margin:.5%;
-	width: inherit;
-	min-height: inherit;
-	text-align: center;
-	border: thin black solid;
-	position: relative;
-}
+  /* Styles the main section of the index page*/
+  #main{
+    text-align: center;
+  }
 
-table{
-	padding: .25%;
-	min-width: 98.5%;
-}
+  /* Styles the footer on the index, specificaly making it bottom center*/
+  footer{
+    text-align: center;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-tr{
-	min-width: 100%;
-	padding: .25%;
-}
+  /* Styles the Shopping Cart page */
+  form{
+  	padding: .5%;
+  	margin:.5%;
+  	width: inherit;
+  	min-height: inherit;
+  	text-align: center;
+  	border: thin black solid;
+  	position: relative;
+  }
 
-td{
-	min-width: inherit;
-	height: 3rem;
-}
+  table{
+  	padding: .25%;
+  	min-width: 98.5%;
+  }
 
-input{
-	font: inherit;
-	width: 100%;
-	margin: .5%;
-	display: block;
-	padding: .5%;
-	border: thin black solid;
-}
+  tr{
+  	min-width: 100%;
+  	padding: .25%;
+  }
 
-th{
-	font-weight: bolder;
-	border: medium black solid;
-}
+  td{
+  	min-width: inherit;
+  	height: 3rem;
+  }
 
-#invBody > tr > td{
-	border: thin black solid;
-}
+  input{
+  	font: inherit;
+  	width: 100%;
+  	margin: .5%;
+  	display: block;
+  	padding: .5%;
+  	border: thin black solid;
+  }
 
-#invBody tr:nth-child(even){
-	background: lightgreen;
-}
+  th{
+  	font-weight: bolder;
+  	border: medium black solid;
+  }
 
-#invoice > table{
-	border: thin black solid;
-}
+  #invBody > tr > td{
+  	border: thin black solid;
+  }
 
-.money{
-	text-align: left;
-}
+  #invBody tr:nth-child(even){
+  	background: lightgreen;
+  }
 
-.money::before{
-	content: '$'
-}
+  #invoice > table{
+  	border: thin black solid;
+  }
 
-#submit{
-	height: 5vh;
-	bottom: 0;
-	width: 95.5vw;
+  .money{
+  	text-align: right;
+  }
+
+  .money::before{
+  	content: '$'
+  }
+
+  #submit{
+  	height: 5vh;
+  	bottom: 0;
+  	width: 95.5vw;
+  }
+
+  .data{
+    padding: 0;
+    border: none;
+  }
+
+  #hidden{
+    border: none;
+    height: 0;
+    width: 0;
+  }
+
+  /* This inventory list on products page*/
+  #display{
+    /*min-height: 83.5vh;*/
+    overflow-y: scroll;
+    text-align: center;
+    height: 80.5vh;
+    max-height: 80.5vh;
+    padding: 1vh;
+  }
+
+  /* Carousel item image properties */
+  .item > a > img{
+    margin: 0 auto;
+    height: 278px;
+    max-height: 278px;
+  }
+
+  #display > div{
+    display: block;
+    font-size: 3rem;
+  }
+
+  /*Products category pages*/
+  #productList > tr > td{
+  	border: thin black solid;
+  }
+
+  #productHeader{
+    display: inline;
+  }
+
+  #addCart{
+    float: right;
+    display: inline;
+    width: 10rem;
+  }
+
+  #addCart::after{
+    clear: right;
+  }
+
+  .cost{
+    display: inline;
+    border: none;
+    float:right;
+    width:auto;
+    text-align: left;
+  }
 }
