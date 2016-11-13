@@ -29,6 +29,9 @@ for(i = 0; i < input.length; i+=3){
   product.push(line)
 }
 
+for(i = 0; i < product.length; i++){
+  dynamicTable(product[i]);
+}
 /*for(i = 0; i < products.length; i++){
   if(product[1][2] != "default"){
 
@@ -39,6 +42,20 @@ for(i = 0; i < input.length; i+=3){
 
 //Check this out for a dynamic table
 //http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insert_deleterow
+function dynamicTable(product){
+
+  var table = document.getElementsByName("invbody");
+  alert(typeof(table) + " " + product) //debug
+  var row = table.insertRow(0);
+  alert(product) //debug
+  var cell0 = row.insertCell(0);
+  var cell1 = row.insertCell(1);
+  var cell2 = row.insertCell(2);
+  var cell3 = row.insertCell(3);
+
+  cell0.innerHTML = product[0];
+}
+
 
 var subtotal = product[0][1] * product[0][2];
 alert(subtotal);
