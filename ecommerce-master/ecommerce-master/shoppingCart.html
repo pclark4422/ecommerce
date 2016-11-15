@@ -1,0 +1,115 @@
+<!doctype HTML>
+<html>
+
+
+<head>
+	<!-- Bootstrap stylesheet taken from http://getbootstrap.com/getting-started/ -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./style/style-mobile.css">
+		<link rel="stylesheet" href="./style/style-desktop.css">
+
+		<title>Pet Supplies </title>
+</head>
+
+<body>
+
+	<header>
+		<h2> PetEx Pet Supplies </h2>
+		<div class="mask"></div>
+	</header>
+
+	<nav class="navBar">
+		<ul>
+			<li class="navList">
+				<a href="./index.html">Home</a>
+			</li>
+
+			<li class="navList">
+				<a href="./products.html">Products</a>
+			</li>
+
+			<li class="navList">
+				<a href="./shoppingcart.html">Shopping Cart</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="cart" name="cart">
+		<form id="orderInfo" name="orderInfo">
+			<div id="shippingInfo">
+				<h3>Shipping information</h3>
+				<table>
+					<tr>
+						<td>Name: </td>
+						<td><input type="text"></label></td>
+					</tr>
+
+					<tr>
+						<td>Address 1: </td>
+						<td><input type="text"></label></td>
+					</tr>
+
+					<tr>
+						<td>Address 2: </td>
+						<td><input type="text"></label></td>
+					</tr>
+
+					<tr>
+						<td>City: </td>
+						<td><input type="text"></label></td>
+					</tr>
+
+					<tr>
+						<td>State: </td>
+						<td><input type="text"></label></td>
+					</tr>
+
+					<tr>
+						<td>Zip Code: </td>
+						<td><input type="text"></label></td>
+					</tr>
+				</table>
+				<h3>Order Information</h3>
+			</div>
+			<div id="invoice" name="invoice">
+				<table name="invTable" id="invTable">
+					<thead id="invHead">
+						<th>Item Name</th>
+						<th>Price</th>
+						<th>Qty</th>
+						<th>Subtotal</th>
+					</thead>
+
+					<tfoot id="invFoot">
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td class="total">Total</td>
+							<td class="money" id="totalPrice"> </td>
+						</tr>
+					</tfoot>
+
+					<tbody id="invBody" name="invBody">
+						<!-- Dynamically populated list -->
+					</tbody>
+				</table>
+			</div>
+		</form>
+
+		<input id="submit" type="submit">
+
+	</div>
+
+	<form id="hidden" name="hidden">
+		<input type="hidden" name="address">
+	</form>
+
+	<!-- Bootstrap javascript taken from http://getbootstrap.com/getting-started/-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="./js/cart.js"></script>
+
+
+</body>
+</html>
