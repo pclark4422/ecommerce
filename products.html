@@ -1,7 +1,6 @@
 <!doctype HTML>
 <html>
 
-
 <head>
 	<!-- Bootstrap stylesheet taken from http://getbootstrap.com/getting-started/ -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -39,144 +38,163 @@
 	<div id="display">
 		<h3> Pet Food </h3>
 		<!-- This carousel is copied from https://v4-alpha.getbootstrap.com/components/carousel/-->
-		<div id="food" class="carousel slide" data-ride="carousel">
+		<div id="food" class="carousel slide" data-ride="carousel" data-interval="false">
+
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
 		      <a href="./placeholder.html" target="_blank"><img src="./img/pet_food.jpg"></a>
+
+					<h4>Dog Food</h4>
 		    </div>
 		    <div class="item">
 		      <a href="./placeholder.html" target="_blank"><img src="./img/pet_food.jpg"></a>
+						<h4>Cat Food</h4>
 		    </div>
 		    <div class="item">
 		      <a href="./placeholder.html" target="_blank"><img src="./img/pet_food.jpg"></a>
+					<h4>Fish Food</h4>
 		    </div>
 		  </div>
 
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#food" role="button" data-slide="prev">
 		    <span class="icon-prev" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#food" role="button" data-slide="next">
 		    <span class="icon-next" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
 
 		<h3>Pet Toys and Environments</h3>
-		<div id="toys" class="carousel slide" data-ride="carousel">
+		<div id="toys" class="carousel slide" data-ride="carousel" data-interval="false">
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
 		      <a><img src="./img/pet_toys.jpg"></a>
+					<h4>Dog Toys and Houses</h4>
 		    </div>
 		    <div class="item">
 		      <a><img src="./img/pet_toys.jpg"></a>
+					<h4>Cat Toys and Towers</h4>
 		    </div>
 		    <div class="item">
 		      <a><img src="./img/pet_toys.jpg"></a>
+					<h4>Fish Tank Accessories</h4>
 		    </div>
 		  </div>
 
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#toys" role="button" data-slide="prev">
 		    <span class="icon-prev" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#toys" role="button" data-slide="next">
 		    <span class="icon-next" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
 
 		<h3>Pet Clothes</h3>
-		<div id="clothes" class="carousel slide" data-ride="carousel">
+		<div id="clothes" class="carousel slide" data-ride="carousel" data-interval="false">
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<a><img src="./img/pet_clothes.jpg"></a>
+					<h4>Dog Clothes</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_clothes.jpg"></a>
+					<h4>Cat Clothes</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_clothes.jpg"></a>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#clothes" role="button" data-slide="prev">
 				<span class="icon-prev" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#clothes" role="button" data-slide="next">
 				<span class="icon-next" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 
 		<h3>Crates, Cages, and Tanks</h3>
-		<div id="clothes" class="carousel slide" data-ride="carousel">
+		<div id="cages" class="carousel slide" data-ride="carousel" data-interval="false">
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<a><img src="./img/pet_crate.jpg"></a>
+					<h4>Dog and Cat crates</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_crate.jpg"></a>
+					<h4>Aquarium and Terrarium Tanks</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_crate.jpg"></a>
+					<h4>Bird Cages</h4>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#cages" role="button" data-slide="prev">
 				<span class="icon-prev" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#cages" role="button" data-slide="next">
 				<span class="icon-next" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 
 		<h3>Pet Medicine</h3>
-		<div id="clothes" class="carousel slide" data-ride="carousel">
+		<div id="meds" class="carousel slide" data-ride="carousel" data-interval="false">
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<a><img src="./img/pet_meds.jpg"></a>
+					<h4>Flea and Tick Prevention</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_meds.jpg"></a>
+					<h4>Over the Counter Medicine</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_meds.jpg"></a>
+					<h4>Prescription Medicine</h4>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#meds" role="button" data-slide="prev">
 				<span class="icon-prev" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#meds" role="button" data-slide="next">
 				<span class="icon-next" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 
-		<h3>Grooming Tools</h3>
-		<div id="clothes" class="carousel slide" data-ride="carousel">
+		<h3>Grooming and Cleaning Tools</h3>
+		<div id="grooming" class="carousel slide" data-ride="carousel" data interval="false">
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<a><img src="./img/pet_grooming.jpg"></a>
+					<h4>Clippers and Brushes</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_grooming.jpg"></a>
+					<h4>Soaps and Shampoos</h4>
 				</div>
 				<div class="item">
 					<a><img src="./img/pet_grooming.jpg"></a>
+					<h4>Tank Cleaning</h4>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#grooming" role="button" data-slide="prev">
 				<span class="icon-prev" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#grooming" role="button" data-slide="next">
 				<span class="icon-next" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
