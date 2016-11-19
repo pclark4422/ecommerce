@@ -50,8 +50,8 @@
 
 	.navList > a {
 		height: 2vh;
-		width: 24vw;
-
+		width: 31%;
+		line-height:0;
 		background-color: aqua;
 		border: medium black solid;
 		margin: .28% 1% .25% 1%;
@@ -59,6 +59,10 @@
 		text-align: center;
 		display: inline-block;
 		float: left;
+	}
+
+	.navlist > a :: after{
+		clear: both;
 	}
 
 	#main {
@@ -180,7 +184,7 @@
 		bottom: 0;
 		width: 95.5vw;
 	}
-	
+
 	/* Carousel item image properties */
   .item > a > img{
     margin: 0 auto;

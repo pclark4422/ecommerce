@@ -73,11 +73,11 @@
 				<h3>Order Information</h3>
 			</div>
 			<div id="invoice" name="invoice">
-				<table name="invTable">
+				<table name="invTable" id="invTable">
 					<thead id="invHead">
 						<th>Item Name</th>
-						<th>Qty</th>
 						<th>Price</th>
+						<th>Qty</th>
 						<th>Subtotal</th>
 					</thead>
 
@@ -86,39 +86,12 @@
 							<td> </td>
 							<td> </td>
 							<td class="total">Total</td>
-							<td class="money"> </td>
+							<td class="money" id="totalPrice"> </td>
 						</tr>
 					</tfoot>
 
 					<tbody id="invBody" name="invBody">
-						<tr>
-							<td name="block"><input name="invProduct" class="data"></input> </td>
-							<td name="invQty"> </td>
-							<td name="invPrice" class="money"> </td>
-							<td name="invSub" class="money"> </td>
-						</tr>
-<!--
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td class="money"> </td>
-							<td class="money"> </td>
-						</tr>
-
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td class="money"> </td>
-							<td class="money"> </td>
-						</tr>
-
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td class="money"> </td>
-							<td class="money"> </td>
-						</tr>
--->
+						<!-- Dynamically populated list -->
 					</tbody>
 				</table>
 			</div>

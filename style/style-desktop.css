@@ -4,43 +4,38 @@
   }
 
   /* An animated header with the company name*/
-  @keyframes pawprints{
-    0%{width:100%;}
-    100%{width:0%;}
-  }
 
   header{
     text-align: center;
-    height: 7%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
   }
 
-  .mask{
-    width: 0%;
-    height: 6.8%;
-    position: absolute;
-    top: 0;
-    right: -0;
-    background-color: white;
-
-    animation-name: pawprints;
-    animation-duration: 10s;
-    animation-iteration-count: 1;
+  header > h2{
+    margin: 0;
+    padding: 15px;
   }
-
 
   header::before{
   	content: "";
   	background: url("../img/pawPrints.png");
   	opacity: .25;
   	position: absolute;
-  	height: 6.8%;
-  	width: 98%;
+  	height: 100%;
+  	width: 100%;
   	top: 0;
   	left: 1%;
   }
 
 
   /* Positions the navigation bar across the top of the page*/
+  .navBar{
+    margin: 0;
+    padding: 0;
+  }
   .navBar > ul {
   	list-style-type: none;
   	margin: 0;
@@ -49,6 +44,7 @@
   	text-align: center;
   	align-content: center;
     background-color: grey;
+    border: none;
   }
 
   li.navlist {
