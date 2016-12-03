@@ -24,13 +24,17 @@ function lineFormat(){
 
 function productFormat(input){
   var product = [];
-
-  for(i = 0; i < input.length; i+=3){
-    var line = [];
-    for(j = 0; j < 3; j++){
-      line.push(input[i+j])
+  if(input.length >=3){
+    for(i = 0; i < input.length; i+=3){
+      var line = [];
+      for(j = 0; j < 3; j++){
+        line.push(input[i+j])
+      }
+      product.push(line)
     }
-    product.push(line)
+  }
+  else{
+    product[2] = "default"
   }
   return product;
 }
@@ -38,6 +42,7 @@ function productFormat(input){
 //Check this out for a dynamic table
 //http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insert_deleterow
 function dynamicTable(product){
+  var productname = "";
 
 	if(product[2] != "default"){
 		var table = document.getElementById("invBody");
@@ -49,10 +54,21 @@ function dynamicTable(product){
 		var cell2 = row.insertCell(2);
 		var cell3 = row.insertCell(3);
 
-		cell0.innerHTML = product[0];
-		cell1.innerHTML = "$" + product[1];
+    if(product[0].indexOf('+') > -1){
+      var rebuild = product[0].split('+');
+      for(i=0;i<rebuild.length;i++){
+        productname += rebuild[i];
+        productname +=" ";
+      }
+    }
+    else{
+        productname = product[0]
+      }
+
+		cell0.innerHTML = productname;
+		cell1.innerHTML = "$" + parseFloat(product[1]).toFixed(2);
 		cell2.innerHTML = product[2];
-		cell3.innerHTML = "$" + product[2] * product[1];
+		cell3.innerHTML = "$" + parseFloat(product[2] * product[1]).toFixed(2);
 	}
 }
 
@@ -68,7 +84,7 @@ function total(product){
 	var totalBlock = document.getElementById("totalPrice");
 
 
-	totalBlock.innerHTML =  total;
+	totalBlock.innerHTML =  parseFloat(total).toFixed(2);
 
 }
 
