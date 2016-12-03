@@ -188,7 +188,8 @@
 	/* Carousel item image properties */
   .item > a > img{
     margin: 0 auto;
-    height: 278px;
+		width: auto;
+    height: 278px !important;
     max-height: 278px;
   }
 

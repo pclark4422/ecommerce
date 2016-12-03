@@ -1,0 +1,161 @@
+<!doctype HTML>
+<html>
+
+
+<head>
+
+	<!-- Bootstrap stylesheet taken from http://getbootstrap.com/getting-started/ -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./style/style-desktop.css">
+		<link rel="stylesheet" href="./style/style-mobile.css">
+		<title>Pet Supplies </title>
+</head>
+
+<body>
+
+	<header>
+		<h2> PetEx Pet Supplies</h2>
+		<div class="mask"></div>
+	</header>
+
+<!-- Navigation Bar -->
+	<nav class="navBar">
+		<ul>
+			<li class="navList">
+				<a href="./index.html">Home</a>
+			</li>
+
+			<li class="navList">
+				<a href="./products.html">Products</a>
+			</li>
+
+			<li class="navList">
+				<a href="./shoppingcart.html">Shopping Cart</a>
+			</li>
+		</ul>
+	</nav>
+
+<!-- Main Content Area-->
+	<div id="main">
+
+		<form id="order" action="shoppingcart.html" method="LINK">
+			<h2 id="productHeader">Bird Food</h2>
+			<input id="addCart" type="submit" value="Add to Cart">
+
+			<div id="display">
+
+				<table id="invoice">
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+					</tr>
+					<tbody id="productList">
+						<tr>
+							<td><input type="hidden" name="product1" value="Animal Farms Parrot Food"><img src="./img/birdfood/animalfarms-parrot.png"></input></td>
+							<td class="money"><input name=cost1 class="cost" type="text" value="12.83"></input></td>
+							<td>
+								<select name="amt1">
+									<option value="default"></option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+									<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+									<option value="9">9</option>
+			  					<option value="10">10</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="hidden" name="product2" value="ZuPreem Parrot Food"><img src="./img/birdfood/zupreem-parrot.png"></input></td>
+							<td class="money"><input name=cost2 class="cost" type="text" value="14.12"></input></td>
+							<td>
+								<select name="amt2">
+									<option value="default"></option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+									<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+									<option value="9">9</option>
+			  					<option value="10">10</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="hidden" name="product3" value="Lafeber's Parakeet Food"><img src="./img/birdfood/lafebers-parakeet.png"></input></td>
+							<td class="money"><input name=cost3 class="cost" type="text" value="9.87"></input></td>
+							<td>
+								<select name="amt3">
+									<option value="default"></option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+									<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+									<option value="9">9</option>
+			  					<option value="10">10</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="hidden" name="product4" value="Bonanza Parakeet Food"><img src="./img/birdfood/bonanza-parakeet.png"></input></td>
+							<td class="money"><input name=cost4 class="cost" type="text" value="8.12"></input></td>
+							<td>
+								<select name="amt4">
+									<option value="default"></option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+									<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+									<option value="9">9</option>
+			  					<option value="10">10</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="hidden" name="product5" value="Kaytee Wild Bird Food"><img src="./img/birdfood/kaytee-wild.png"></input></td>
+							<td class="money"><input name=cost5 class="cost" type="text" value="7.65"></input></td>
+							<td>
+								<select name="amt5">
+									<option value="default"></option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+									<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+									<option value="9">9</option>
+			  					<option value="10">10</option>
+								</select>
+							</td>
+						</tr>
+					<tbody>
+				</table>
+			</div>
+		</form>
+	</div>
+
+	<!-- Bootstrap javascript taken from http://getbootstrap.com/getting-started/-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
