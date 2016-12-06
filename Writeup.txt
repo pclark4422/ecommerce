@@ -1,0 +1,4 @@
+This class has taught me a good deal of advanced CSS techniques and capabilities.  While I tend to lack a certain artistry this has given me some new tools to approach building a website.
+
+If I were to continue this project, apart from refining the visual design of the website, I would focus on the backend portions.  Particularly I would make the product pages retreive information from a database instead of the static tables I currently have.  I would also attempt to incorporate php  shoppingcart page instead of the method I currently have for transferring the customers purchases.  I would also want to use cookies to have a persistent shopping cart so they can go back and modify their orders without losing them entirely.
+
